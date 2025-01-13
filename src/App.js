@@ -10,8 +10,7 @@ import HomePage from "./Pages/Home";
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter basename="/"> */}
-      <BrowserRouter>
+      <BrowserRouter basename="/funzwebsite">
         <ScrollToTop />
         <Header />
         <Routes>
