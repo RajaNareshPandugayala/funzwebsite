@@ -1,0 +1,803 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif !important; */
+  font-family: Neue Plak, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial, sans-serif;
+}
+
+body {
+  margin-top: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  text-shadow: 0px 0px 2px red;
+  background-color: white;
+  border-radius: 0.5cm;
+  padding: 3px 5px;
+}
+
+
+
+
+.homepageCoverPage1,
+.homepageCoverPage2,
+.homepageCoverPage3 {
+  width: 100%;
+}
+
+
+.NoEventsCalendarImage {
+  width: 80px;
+}
+
+
+/*********************************Header-Start************************************/
+
+.headerParent {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px gray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 1000;
+  padding: 17px 0px;
+}
+
+.headerBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  /* padding: 5px 0px; */
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  gap: 25px;
+  font-weight: bold;
+}
+
+.headerMenuUI {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+
+}
+
+.headerMenuUI_LIHeader {
+  cursor: pointer;
+}
+
+.headerMenuUI_LIHeader::after {
+  content: '\25BC';
+  content: '\25BD';
+  display: inline-block;
+  margin-left: 3px;
+  font-size: 12px;
+}
+
+.headerMenuUI_LIHeader:hover::after {
+  content: '\25B2';
+  content: '\25B3';
+  font-size: 12px;
+}
+
+.headerMenuUI:hover>.headerMenuUI_LIHeader::after {
+  content: '\25B2';
+  content: '\25B3';
+  font-size: 12px;
+}
+
+
+.headerMenuUI_LI {
+  position: absolute;
+  display: none;
+  background-color: white;
+  padding: 10px;
+}
+
+.headerMenuUI li {
+  padding: 10px;
+}
+
+.headerMenuUI li a {
+  text-decoration: none;
+  color: black;
+}
+
+.headerMenuUI_Header:hover,
+.headerMenuUI li:hover,
+.headerMenuUI li a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+
+.headerMenuUI:hover>.headerMenuUI_LI {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: -20px;
+  border-radius: 0.1cm;
+}
+
+.headerSeaarchBarDiv {
+  padding: 3px;
+  border-radius: 5cm;
+  border: 1px solid lightgrey;
+}
+
+.fa-solid {
+  padding: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-solid:hover {
+  color: #00005a;
+}
+
+.fa-magnifying-glass {
+  padding-left: 10px;
+}
+
+.fa-location-dot {
+  border-left: 1px solid gray;
+  padding-left: 15px;
+}
+
+#searchEventsBar,
+#chooseALocationBar {
+  border: 1px solid transparent;
+  padding: 10px;
+
+}
+
+#searchEventsBar:focus,
+#chooseALocationBar:focus {
+  border: 1px solid transparent;
+  outline: none;
+}
+
+#searchEventsBar:focus>.headerParent,
+#chooseALocationBar:focus>.headerParent {
+  box-shadow: 0px 0px 0px 10px black;
+}
+
+.searchIconRed {
+  background-color: #d33901;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.searchIconRed:hover {
+  background-color: #b93100;
+  color: white;
+}
+
+/*********************************Header-End************************************/
+
+/*********************************Footer-Start************************************/
+
+.footerParent {
+  background-color: #030326;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 1280px;
+  gap: 35px;
+  /* padding: 5px 0px; */
+}
+
+
+.footerMenuTop {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 13px;
+  gap: 25px;
+  width: 1100px;
+}
+
+.footerMenuBottom {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  font-size: 13px;
+  gap: 25px;
+  width: 100%;
+}
+
+.footerMenuUITopSpan {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+.footerMenuUI {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.footerMenuBottomUI {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.footerMenuUI li {
+  padding: 5px 0px;
+  /* margin-left: -10px; */
+}
+
+.footerMenuBottomUIMiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.shushankTechLink {
+  text-decoration: none;
+  color: white;
+}
+
+.footerMenuUI_Header:hover,
+.footerMenuUI li:hover,
+.footerMenuBottomUI li:hover,
+.shushankTechLink:hover {
+  cursor: pointer;
+  color: #304fc9;
+  text-decoration: underline;
+}
+
+
+.eds-field-styled__select {
+  background-color: #030326;
+  color: white;
+  border: 1px solid #030326;
+}
+
+.eds-field-styled__select option {
+  background-color: white;
+  color: black;
+}
+
+/*********************************Footer-End************************************/
+
+
+/*********************************HomePage-Start************************************/
+
+.homePageParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homePageBox {
+  width: 1270px;
+}
+
+
+
+.homepageCoverPageBox {
+  overflow: hidden;
+  display: flex;
+  border-radius: 0.5cm;
+  width: 100%;
+  height: 400px;
+  /* Set a specific height for the container */
+  position: relative;
+}
+
+.homepageCoverPageBox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: transform 0.5s ease;
+  opacity: 0;
+  z-index: 1;
+}
+
+.homepageCoverPageBox img.showImage {
+  left: 0;
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.homepageCoverPageBox img.slideLeft {
+  transform: translateX(-100%);
+}
+
+.homepageCoverPageBox img.slideRight {
+  transform: translateX(100%);
+}
+
+
+
+.homepageCoverPageDotBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+.homepageCoverPageDotBox span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  margin: 5px;
+  border-radius: 50%;
+
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  z-index: 555;
+}
+
+.homepageCoverPageDotBox .active {
+  background-color: blue;
+}
+
+
+
+.homepageCoverPageDotBox span:hover {
+  border: 1px solid darkgray;
+}
+
+.homepageCoverPageArrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+  top: -230px;
+  z-index: 555;
+}
+
+.homepageCoverPageArrowBox span {
+  padding: 5px 9px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepageCoverPageArrowBox span i {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepageCoverPageArrowBox span:hover {
+  border: 1px solid blueviolet;
+}
+
+.homepageCoverPageArrowBox span:hover>.fa-angle-right,
+.homepageCoverPageArrowBox span:hover>.fa-angle-left {
+  color: blueviolet;
+}
+
+
+.listOfEventBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.listOfEvent {
+  width: 120px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.iconList {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  color: gray;
+}
+
+.listOfEvent:hover {
+  color: darkblue;
+}
+
+.listOfEvent:hover>.iconList {
+  background-color: lightgray;
+  cursor: pointer;
+  color: darkblue;
+}
+
+.homePageBrowsingEventBox {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.homePageBrowsingEventSearchBar {
+  color: darkblue;
+}
+
+.fa-angle-down {
+  font-size: 25px;
+  font-weight: bold;
+  color: darkblue;
+  padding-left: 20px;
+}
+
+.homePageBrowsingEventSearchBar input {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+  padding-left: 10px;
+  border: 1px solid transparent;
+}
+
+#BrowsingLocationBar:focus {
+  border: 1px solid transparent;
+  outline: none;
+}
+
+
+.homePageEventListAll {
+  margin-top: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: gray;
+}
+
+.homePageEventListAll span:hover {
+  color: darkblue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.homePageEventListAll1 {
+  color: black;
+  text-decoration: underline;
+}
+
+.homePageEventListAll1:hover {
+  color: black;
+}
+
+.topTrendingBox {
+  padding: 80px 0px;
+}
+
+.homepagetopTrendingArrowTopBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homepagetopTrendingArrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.homepagetopTrendingArrowBox span {
+  border-radius: 50%;
+  padding: 7px 10px;
+  font-size: 25px;
+  border: 2px solid gray;
+}
+
+
+.homepagetopTrendingBottomBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  overflow: hidden;
+}
+
+
+.homepagetopTrendingBottomimagesDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepagetopTrendingBottomNumber {
+  font-size: 100px;
+  font-weight: bold;
+  color: #304fc9;
+  margin-right: -15px;
+}
+
+.homepagetopTrendingBottomimageBoxSpan {
+  border: 1px solid transparent;
+  border-radius: 0.25cm;
+  width: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  background-color: white;
+  height: 280px;
+}
+
+.homepagetopTrendingBottomimageBoxSpan:hover {
+  border: 1px solid lightgray;
+  box-shadow: 0px 1px 10px 1px lightgray;
+}
+
+.topTrendingImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.25cm;
+  height: 100px;
+  z-index: 950;
+  width: 100%;
+}
+
+.topTrendingImage {
+  width: 100%;
+}
+
+.topTrendingImageBelowContentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.topTrendingImageBelowContentBox span {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+.noEventsTryDiffLocationBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.noEventsTryDiffLocationBox b {
+  font-size: 20px;
+}
+
+
+
+.topDestinationsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: -70px;
+}
+
+.topDestinationsListOfBoxs {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  overflow: hidden;
+  gap: 20px;
+}
+
+
+.topDestinationsImageSpan {
+  width: 350px;
+  height: 210px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  overflow: hidden;
+  border-top-left-radius: 1cm;
+  border-top-right-radius: 1cm;
+}
+
+
+.topDestinationsImage {
+  width: 350px;
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  ;
+}
+
+.topDestinations:hover .topDestinationsImage {
+  width: 370px;
+}
+
+.topDestinationsImageState {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  top: -60px;
+  left: 20px;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  z-index: 999;
+}
+
+.topDestinations {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.topDestinationsLine {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  top: -90px;
+}
+
+.topDestinationsLineSpan {
+  background-color: darkorange;
+  height: 10px;
+  width: 100%;
+  transition: height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  ;
+}
+
+.topDestinations:hover .topDestinationsLineSpan {
+  height: 60px;
+}
+
+.popularCitiesBox {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popularCitiesHeading {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.popularCitiesLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5f5f5f;
+}
+
+.popularCitiesLinks span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.popularCitiesLinks span:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/*********************************HomePage-End************************************/
