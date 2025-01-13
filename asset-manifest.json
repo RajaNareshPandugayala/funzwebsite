@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/funzwebsite/static/css/main.8a335dbc.css",
-    "main.js": "/funzwebsite/static/js/main.e3e778c1.js",
+    "main.js": "/funzwebsite/static/js/main.6a4f046c.js",
     "static/js/488.4def85f9.chunk.js": "/funzwebsite/static/js/488.4def85f9.chunk.js",
     "static/media/-dsrp_desktop.webp": "/funzwebsite/static/media/389ece7b7e2dc7ff8d28524bad30d52c-dsrp_desktop.389ece7b7e2dc7ff8d28.webp",
     "static/media/-nightlife_desktop.webp": "/funzwebsite/static/media/0205288125d365f93edf9b62837de839-nightlife_desktop.0205288125d365f93edf.webp",
@@ -33,11 +33,11 @@
     "static/media/funz-logo.svg": "/funzwebsite/static/media/funz-logo.d85fca0da64a832fad10985e343d3034.svg",
     "index.html": "/funzwebsite/index.html",
     "main.8a335dbc.css.map": "/funzwebsite/static/css/main.8a335dbc.css.map",
-    "main.e3e778c1.js.map": "/funzwebsite/static/js/main.e3e778c1.js.map",
+    "main.6a4f046c.js.map": "/funzwebsite/static/js/main.6a4f046c.js.map",
     "488.4def85f9.chunk.js.map": "/funzwebsite/static/js/488.4def85f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8a335dbc.css",
-    "static/js/main.e3e778c1.js"
+    "static/js/main.6a4f046c.js"
   ]
 }
