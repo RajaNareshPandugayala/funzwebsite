@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/funzwebsite/static/css/main.8a335dbc.css",
+    "main.js": "/funzwebsite/static/js/main.e3e778c1.js",
+    "static/js/488.4def85f9.chunk.js": "/funzwebsite/static/js/488.4def85f9.chunk.js",
+    "static/media/-dsrp_desktop.webp": "/funzwebsite/static/media/389ece7b7e2dc7ff8d28524bad30d52c-dsrp_desktop.389ece7b7e2dc7ff8d28.webp",
+    "static/media/-nightlife_desktop.webp": "/funzwebsite/static/media/0205288125d365f93edf9b62837de839-nightlife_desktop.0205288125d365f93edf.webp",
+    "static/media/-citybrowse_desktop.webp": "/funzwebsite/static/media/08f04c907aeb48f79070fd4ca0a584f9-citybrowse_desktop.08f04c907aeb48f79070.webp",
+    "static/media/topTrending4.jpg": "/funzwebsite/static/media/topTrending4.d4d0ef6df1d983b3f78d.jpg",
+    "static/media/ma--boston.webp": "/funzwebsite/static/media/ma--boston.3322315eac8b6d099494.webp",
+    "static/media/topTrending6.jpg": "/funzwebsite/static/media/topTrending6.74537542534f3877e092.jpg",
+    "static/media/tx--dallas.webp": "/funzwebsite/static/media/tx--dallas.abc2b5695a7938bc1133.webp",
+    "static/media/tx--houston.webp": "/funzwebsite/static/media/tx--houston.58b5f35984cad88c6c7c.webp",
+    "static/media/ca--los-angeles.webp": "/funzwebsite/static/media/ca--los-angeles.2a0f5145e92a049a4f1c.webp",
+    "static/media/dc--washington.webp": "/funzwebsite/static/media/dc--washington.edb2c1c57be6fec3582c.webp",
+    "static/media/il--chicago.webp": "/funzwebsite/static/media/il--chicago.4e0957f7b34520fdbc86.webp",
+    "static/media/pa--philadelphia.webp": "/funzwebsite/static/media/pa--philadelphia.3122987c80d9c16c7a30.webp",
+    "static/media/fl--orlando.webp": "/funzwebsite/static/media/fl--orlando.dd9fe824a7a94adec773.webp",
+    "static/media/topTrending7.jpg": "/funzwebsite/static/media/topTrending7.22e0799d82788baa613b.jpg",
+    "static/media/topTrending1.jpg": "/funzwebsite/static/media/topTrending1.58cc33094a43cc4bb38e.jpg",
+    "static/media/NoEventsCalendar.png": "/funzwebsite/static/media/NoEventsCalendar.524bb0c6f78c8903fc6d.png",
+    "static/media/ny--new-york.webp": "/funzwebsite/static/media/ny--new-york.ec4ba6b96caf89eba8c6.webp",
+    "static/media/nv--las-vegas.webp": "/funzwebsite/static/media/nv--las-vegas.41ba356256c87f0006e8.webp",
+    "static/media/ga--atlanta.webp": "/funzwebsite/static/media/ga--atlanta.89475fc0073d18b7ce7b.webp",
+    "static/media/topTrending3.jpg": "/funzwebsite/static/media/topTrending3.ff59dee215b28acb33f6.jpg",
+    "static/media/topTrending5.jpg": "/funzwebsite/static/media/topTrending5.ff59dee215b28acb33f6.jpg",
+    "static/media/ca--san-francisco.webp": "/funzwebsite/static/media/ca--san-francisco.03bc43153749b8e76b0e.webp",
+    "static/media/topTrending2.jpg": "/funzwebsite/static/media/topTrending2.746a27bfdb3e843bc320.jpg",
+    "static/media/nc--charlotte.webp": "/funzwebsite/static/media/nc--charlotte.1214248489e1c9b00c62.webp",
+    "static/media/topTrending8.jpg": "/funzwebsite/static/media/topTrending8.22ff359561e500b084a4.jpg",
+    "static/media/fl--miami.webp": "/funzwebsite/static/media/fl--miami.92d680843b4140e2f851.webp",
+    "static/media/ca--san-diego.webp": "/funzwebsite/static/media/ca--san-diego.1808ebf77e2dea37154b.webp",
+    "static/media/funz-logo.svg": "/funzwebsite/static/media/funz-logo.d85fca0da64a832fad10985e343d3034.svg",
+    "index.html": "/funzwebsite/index.html",
+    "main.8a335dbc.css.map": "/funzwebsite/static/css/main.8a335dbc.css.map",
+    "main.e3e778c1.js.map": "/funzwebsite/static/js/main.e3e778c1.js.map",
+    "488.4def85f9.chunk.js.map": "/funzwebsite/static/js/488.4def85f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a335dbc.css",
+    "static/js/main.e3e778c1.js"
+  ]
+}
